@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with the Hive Challenge Demo 🐝
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) ⚛️
 
-## Available Scripts
+## Available Scripts 📝
 
-In the project directory, you can run:
+To run this project directory, please run:
 
-### `yarn start`
+### `yarn start` 🧶
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +14,38 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `yarn test`
+## Requirements 🤔
+### Design and Interface 💻
+- A user should be able to open and close the dropdown menu ✅
+    - Please open and close the dropdown menus by:
+    - multi: clicking outside of the dropdown selection list
+    - single: clicking outside of the dropdown selection list or by making a selection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The component must support a single selected option or multiple selected options. Please demonstrate both use cases separately ✅
+    - Please refer to both our multi-select and single-select dropdown component variants
+    - The variants are switchable by the prop `variant` which is intented to be of value `single` or `multi`
 
-### `yarn build`
+- A user should be able to select and deselect all options at once ✅
+    - We opted for this functionality for the multi-select variant as the single-select just needs one result value. There is a `select all` and `deselect all` button in multi-select dropdown table
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The selected option or options must be visible when the dropdown is closed ✅
+    - The selection result is displayed in the text area of the dropdown select button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API (via Component Props) 🗺
+- The component should support both single select and multi select ✅
+    - Yes, we have both the single and multi select options opted by setting the `variant` prop to `single` or `multi`
+- The component should have a flexible API, making it reusable across different parts of one or more applications. Consider it part of a component library ✅
+    - We have props for easy adjustability of the `placeholderText`: text for the dropdown select button area when there is no select made, `optionTitleList`: the desired items for the dropdown to list , and `variant`: to desginate the functionality of a multi select dropdown (including select all and deselect all buttons) or of a single select dropdown
+## Performance 🏃‍♂️
+- The component should render large lists efficiently ✅
+    - The styling of the dropdown has a maximum table height and maximum button height to allow for proper sizing when there are more dropdown items.
+- The component should not perform excessive computations ✅
+    - The dropdown was implemented with simple React functionalities and functions without any large dependancies or packages.
+## Readability 👀
+- The code should be readable and a fellow developer should be able to dive right into
+your code ✅
+    - The code was written with Clean Code first thinking
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Learn More 🙋‍♂️
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can learn more about me, Chris Ren, by taking a look at my projects at my [Github](https://github.com/renchris) or my work experience at my [LinkedIn](https://www.linkedin.com/in/ren-chris/)
