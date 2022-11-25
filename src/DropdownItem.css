@@ -1,0 +1,9 @@
+.dropdown-item {
+    background-color: white;
+    padding: 12px;
+    margin: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: #EBF8FF;
+}
